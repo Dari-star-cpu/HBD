@@ -1,0 +1,136 @@
+body {
+  background-color: #ffebf3;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.birthday-container {
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 107, 157, 0.5);
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(45deg, #ff6b9d, #6bb9ff, #6bff9d);
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0.5;
+}
+
+h1.title {
+  color: #ff6b9d;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.cake {
+  font-size: 5em;
+  margin: 20px 0;
+  animation: bounce 1s infinite alternate;
+}
+
+.message {
+  color: #555;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.action-btn {
+  background-color: #ff6b9d;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.action-btn:hover {
+  background-color: #e85c8f;
+}
+
+.photo-frame {
+  margin-top: 30px;
+}
+
+.photo-placeholder img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+  margin-top: 15px;
+  font-style: italic;
+  color: #444;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #f00;
+  opacity: 0.7;
+  animation: confetti-fall 5s linear infinite;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-20px); }
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-100vh) rotate(0deg); }
+  100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1.title {
+    font-size: 2em;
+  }
+
+  .message {
+    font-size: 1em;
+  }
+
+  .cake {
+    font-size: 4em;
+  }
+
+  .action-btn {
+    padding: 8px 16px;
+  }
+}
+
+:root {
+  color-scheme: light;
+}

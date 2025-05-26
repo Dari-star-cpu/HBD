@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Cumpleaños Animado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="happy.css">
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+  <div class="floating-hearts" id="hearts"></div>
+
+  <div class="birthday-container">
+    <div class="card">
+      <div class="cake-container">
+        <div class="cake">🎂</div>
+        <div class="candle"></div>
+        <div class="flame"></div>
+      </div>
+      <h1 class="title">¡Feliz Cumpleaños!</h1>
+      <p class="message">Que este día esté lleno de alegría, amor y momentos inolvidables</p>
+      <button id="confetti-btn" class="action-btn">¡Celebrar!</button>
+    </div>
+
+    <div class="photo-frame">
+      <div class="photo-placeholder">
+        <img src="https://imgs.search.brave.com/DZG5Z1eb0wUVZYkVXynCnl6m62KqyWqbaOqBN3yQBVY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wNC53/YWxscGFwZXJiZXR0/ZXIuY29tL3dhbGxw/YXBlci81NDIvNTQ5/LzIyMy9zdW5yaXNl/LWZ1bGwtaGQtaW1h/Z2Utd2FsbHBhcGVy/LXByZXZpZXcuanBn"
+             alt="Vistas desde las alturas">
+      </div>
+      <div class="image-caption">
+        "Que cada momento de tu vida<br> 
+        sea tan brillante como tus sueños,<br>
+        tan cálido como tu corazón,<br>
+        y tan infinito como este horizonte."
+      </div>
+    </div>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+  <script src="happy.js"></script>
+</body>
+</html>
